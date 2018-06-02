@@ -101,7 +101,7 @@ void Hooks::UndoHooks()
 void Hooks::Initialise()
 {
 	Interfaces::Engine->ExecuteClientCmd("clear");
-	Interfaces::CVar->ConsoleColorPrintf(Color(0, 255, 0, 255), ("\n PhantomWare Injected! \n"));
+	Interfaces::CVar->ConsoleColorPrintf(Color(0, 255, 0, 255), ("\n Paste Injected! \n"));
 	Interfaces::CVar->ConsoleColorPrintf(Color(0, 255, 255, 255), ("\n Date : %s \n"), __DATE__);
 
 	VMTPanel.Initialise((DWORD*)Interfaces::Panels);
@@ -142,9 +142,10 @@ float clip(float n, float lower, float upper)
 	return (std::max)(lower, (std::min)(n, upper));
 }
 
-const char* clantaganimation[21] =
+const char* clantaganimation[2] =
 {
-	"JACEKWEBZ.PW",
+	"me",
+	"mes",
 
 };
 
